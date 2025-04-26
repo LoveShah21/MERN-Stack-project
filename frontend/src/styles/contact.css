@@ -1,0 +1,111 @@
+/* Responsive CSS for Contact Page */
+
+/* Media query for large screens */
+@media (min-width: 992px) {
+  .contact-info-column {
+    height: 100%;
+  }
+}
+
+/* Media query for medium screens */
+@media (max-width: 991px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .contact-info-column {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+  
+  .form-column {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+  .card-body {
+    padding: 15px;
+  }
+  
+  .row .col-md-6 {
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    width: 100% !important;
+  }
+  
+  .row.mb-3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .form-label {
+    margin-bottom: 0.3rem;
+  }
+  
+  textarea.form-control {
+    min-height: 100px;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .card-body {
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-info-column p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem !important;
+  }
+  
+  .social-icons {
+    padding-top: 30px !important;
+  }
+  
+  .social-icons a {
+    padding: 8px !important;
+  }
+  
+  .social-icons svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Subject radio buttons responsive layout */
+@media (max-width: 480px) {
+  .row.ms-2 {
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row.ms-2 .col {
+    margin-bottom: 10px;
+  }
+}

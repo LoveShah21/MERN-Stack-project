@@ -1,0 +1,16 @@
+/* About.css */
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @media (max-width: 640px) {
+    .image-container {
+      position: static;
+      transform: none;
+      text-align: center;
+      margin-top: 20px; /* Add some spacing for better layout */
+    }
+  }

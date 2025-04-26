@@ -1,0 +1,9 @@
+.custom:hover {
+    color: red !important;
+    font-size: larger;
+}
+
+/* .fw-normal:hover{
+    color: red ;
+    font-size: larger;
+} */

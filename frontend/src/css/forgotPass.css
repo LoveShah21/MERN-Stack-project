@@ -1,0 +1,181 @@
+/* ForgotPassword.css */
+/* .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  } */
+
+  /* forgotPass.css */
+
+/* Base styles for all screen sizes */
+.container.d-flex.justify-content-center.align-items-center.vh-100 {
+  padding: 20px;
+}
+
+.card {
+  width: 100% !important;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card.p-4 {
+  padding: 2rem !important;
+}
+
+/* Image column styling */
+.card .col:first-child img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Form column styling */
+.card .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+
+.card-body {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Form elements styling */
+.card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+.text-center.mb-4 {
+  color: #666;
+}
+
+.form-control.rounded-pill {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary.rounded-pill {
+  background-color: #0d6efd;
+  border: none;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  /* Stack columns vertically on tablets */
+  .card .row {
+    flex-direction: column;
+  }
+  
+  .card .col:first-child img {
+    border-radius: 8px 8px 0 0;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .card .col-md-6 {
+    padding: 20px;
+  }
+  
+  .card-body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust container padding */
+  .container.d-flex.justify-content-center.align-items-center.vh-100 {
+    padding: 10px;
+    height: auto !important;
+    min-height: 100vh;
+  }
+  
+  /* Reduce card padding */
+  .card.p-4 {
+    padding: 1.5rem !important;
+  }
+  
+  /* Adjust image size */
+  .card .col:first-child img {
+    max-width: 350px;
+  }
+  
+  /* Adjust form elements */
+  .form-control.rounded-pill {
+    padding: 8px 15px;
+  }
+  
+  /* Adjust button size */
+  .btn.rounded-pill {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile-specific adjustments */
+  .card.p-4 {
+    padding: 1rem !important;
+  }
+  
+  /* Adjust image size */
+  .card .col:first-child img {
+    max-width: 280px;
+  }
+  
+  /* Adjust text sizes */
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .text-center.mb-4 {
+    font-size: 0.9rem;
+  }
+  
+  /* Full width button */
+  .btn.rounded-pill {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Extra small devices */
+  .container.d-flex.justify-content-center.align-items-center.vh-100 {
+    padding: 5px;
+  }
+  
+  .card .col:first-child img {
+    max-width: 220px;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+  
+  .form-control.rounded-pill {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,8 @@
+.hover-effect {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .hover-effect:hover {
+    color: #f8f9fa; /* Change to desired hover text color */
+    background-color: blue; /* Change to desired hover background color */
+  } 

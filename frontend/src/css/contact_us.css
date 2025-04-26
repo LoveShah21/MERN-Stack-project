@@ -1,0 +1,102 @@
+/* Custom CSS for tick marks */ 
+.form-check-input {
+  appearance: none; /* Remove default appearance */
+  width: 15px;
+  height: 15px;
+  border: 2px solid black !important; /*Border color */
+  border-radius: 50%; /* Make it circular */
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: none;
+  transition: box-shadow 2s ease;
+}
+
+.form-check-input:checked {
+  background-color: black !important;
+  border-color: black !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.form-check-input:checked::after {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #8D8D8D;
+  border-radius: 0;
+}
+
+/* Contact info column styles */
+.contact-info-column {
+  background: #2A688A;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+/* Form column styles */
+.form-column {
+  padding: 20px;
+}
+
+/* Base container styles */ 
+.container {
+  padding: 0 15px;
+}
+
+/* Card styles */
+.card.mx-auto {
+  max-width: 1200px;
+}
+
+/* Add this to your CSS to fix the label and input layout */
+.form-column label.form-label {
+  display: block;
+  width: 40%;
+  margin-bottom: 0.5rem;
+}
+
+.form-column .form-control {
+  width: 100%;
+  display: block;
+}
+
+/* Remove any flex display from the input containers */
+.col-md-6.d-flex {
+  display: block !important;
+}
+
+/* Make sure the row structure works properly */
+.row.mb-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ensure proper spacing */
+.form-column .col-md-6 {
+  margin-bottom: 1rem;
+}
+
+/* For subject radio selection, ensure proper display */
+.form-check {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .row .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

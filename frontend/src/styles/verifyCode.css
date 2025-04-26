@@ -1,0 +1,186 @@
+/* verifyCode.css */
+
+/* Base styles for all screen sizes */
+.container.d-flex.justify-content-center.align-items-center.vh-100 {
+    padding: 5px;
+  }
+  
+  .card {
+    width: 100% !important;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  
+  .card.p-4 {
+    padding: 2rem !important;
+  }
+  
+  /* Image column styling */
+  .card .col:first-child img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  /* Form column styling */
+  .card .col-md-6 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-body {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Form elements styling */
+  .card-title {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .text-center.mb-4 {
+    color: #666;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* OTP input styling */
+  .verification-input {
+    width: 40px !important;
+    height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px !important;
+  }
+  
+  .verification-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .btn-primary.rounded-pill {
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 0;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    /* Stack columns vertically on tablets */
+    .card .row {
+      flex-direction: column;
+    }
+    
+    .card .col:first-child img {
+      border-radius: 8px 8px 0 0;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    .card .col-md-6 {
+      padding: 20px;
+    }
+    
+    .card-body {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust container padding */
+    .container.d-flex.justify-content-center.align-items-center.vh-100 {
+      padding: 10px;
+      height: auto !important;
+      min-height: 100vh;
+    }
+    
+    /* Reduce card padding */
+    .card.p-4 {
+      padding: 1.5rem !important;
+    }
+    
+    /* Adjust image size */
+    .card .col:first-child img {
+      max-width: 350px;
+    }
+    
+    /* Adjust OTP inputs */
+    .verification-input {
+      width: 35px !important;
+      height: 45px;
+    }
+    
+    /* Adjust button size */
+    .btn.rounded-pill {
+      width: 60% !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Mobile-specific adjustments */
+    .card.p-4 {
+      padding: 1rem !important;
+    }
+    
+    /* Adjust image size */
+    .card .col:first-child img {
+      max-width: 280px;
+    }
+    
+    /* Adjust text sizes */
+    .card-title {
+      font-size: 1.5rem;
+    }
+    
+    .text-center.mb-4 {
+      font-size: 0.9rem;
+    }
+    
+    /* Adjust OTP inputs */
+    .verification-input {
+      width: 30px !important;
+      height: 40px;
+      font-size: 1rem;
+      margin: 0 2px;
+    }
+    
+    /* Full width button */
+    .btn.rounded-pill {
+      width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    /* Extra small devices */
+    .container.d-flex.justify-content-center.align-items-center.vh-100 {
+      padding: 5px;
+    }
+    
+    .card .col:first-child img {
+      max-width: 220px;
+    }
+    
+    .card-title {
+      font-size: 1.3rem;
+    }
+    
+    /* Adjust OTP inputs */
+    .verification-input {
+      width: 25px !important;
+      height: 35px;
+      font-size: 0.9rem;
+      margin: 0 1px;
+    }
+    
+    .form-group.mb-3.d-flex.justify-content-evenly {
+      justify-content: space-between !important;
+    }
+  }

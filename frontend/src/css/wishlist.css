@@ -1,0 +1,163 @@
+/* Base card styles */
+.custom-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.custom-card-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+}
+
+.custom-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* Scroll containers for both sections */
+.wishlist-scroll-container,
+.just-for-you-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.wishlist-scroll-container::-webkit-scrollbar,
+.just-for-you-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll content styling */
+.wishlist-scroll-content,
+.just-for-you-scroll-content {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  min-width: 100%;
+}
+
+/* Card wrapper styling */
+.wishlist-card,
+.just-for-you-card {
+  flex: 0 0 auto;
+  width: 250px;
+}
+
+/* Button styling */
+.btn-outline-dark {
+  border-color: #343a40;
+  color: #343a40;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Hover effects */
+.custom-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Header alignment */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .wishlist-card,
+  .just-for-you-card {
+      width: 230px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wishlist-card,
+  .just-for-you-card {
+      width: 220px;
+  }
+  
+  .custom-card-img {
+      height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wishlist-card,
+  .just-for-you-card {
+      width: 200px;
+  }
+  
+  .custom-card-img {
+      height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wishlist-card,
+  .just-for-you-card {
+      width: 180px;
+  }
+  
+  .custom-card-img {
+      height: 140px;
+  }
+  
+  .wishlist-scroll-content,
+  .just-for-you-scroll-content {
+      gap: 15px;
+  }
+}
+
+/* Empty state styling */
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+  color: #6c757d;
+}
+
+/* Position absolute for delete button */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+/* Ensure proper spacing */
+.container.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}

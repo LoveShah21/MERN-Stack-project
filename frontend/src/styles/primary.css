@@ -1,0 +1,103 @@
+
+/* General responsive rules */
+@media (max-width: 1200px) {
+    .container-fluid {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* Adjust the landing page layout for tablets */
+    .container-fluid .row {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .container-fluid .col {
+      width: 100% !important;
+      margin-bottom: 30px;
+    }
+  
+    /* Adjust the image column */
+    .container-fluid .col:first-child {
+      height: 500px !important;
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+  
+    /* Center the buttons */
+    .col.text-center.my-auto {
+      padding: 0 15px;
+    }
+  
+    /* Adjust button sizes */
+    .btn-lg {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Further adjustments for smaller tablets */
+    .container-fluid .col:first-child {
+      height: 350px !important;
+    }
+  
+    /* Stack buttons vertically */
+    .mb-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mb-4 .btn {
+      margin: 5px 0 !important;
+      width: 200px;
+    }
+  
+    /* Adjust logo size */
+    .container-fluid .col:first-child img {
+      width: 300px !important;
+      height: auto !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Mobile phone adjustments */
+    .container-fluid .col:first-child {
+      height: 250px !important;
+    }
+  
+    /* Make buttons full width */
+    .mb-4 .btn {
+      width: 100%;
+    }
+  
+    /* Adjust logo size */
+    .container-fluid .col:first-child img {
+      width: 250px !important;
+    }
+  
+    /* Adjust OR divider */
+    .d-flex.align-items-center.justify-content-center.mb-4 {
+      flex-direction: column;
+    }
+  
+    .d-flex.align-items-center.justify-content-center.mb-4 hr {
+      width: 100% !important;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    /* Extra small devices */
+    .container-fluid .col:first-child {
+      height: 500px !important;
+    }
+  
+    .container-fluid .col:first-child img {
+      width: 200px !important;
+    }
+  } 
